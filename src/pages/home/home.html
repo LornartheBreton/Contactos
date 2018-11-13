@@ -1,14 +1,33 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+  <ion-row>
+    
+      <ion-title>
+        Contactos
+      </ion-title>
+     
+    
+  </ion-row>
+  <!-- <ion-title>
+    Contactos
+  </ion-title> -->
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-list>
+    <h1 align="right" (click)=addContact()>
+      +
+    </h1>
+
+    <ion-item *ngFor ="let contacto of contactos">
+      <ion-avatar item-start>
+        <img src={{contacto.img}}>
+      </ion-avatar>
+      <h2 (click)="viewContact(contacto)"
+      >{{contacto.name}}</h2>
+      <p>{{contacto.cel}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>

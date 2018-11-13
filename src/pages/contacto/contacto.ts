@@ -14,8 +14,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'contacto.html',
 })
 export class ContactoPage {
-
+  name="";
+  mail="";
+  cel="";
+  fb="";
+  twitter="";
+  ints="";
+  img="";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.name=this.navParams.get("name");
+    this.mail=this.navParams.get("mail");
+    this.img=this.navParams.get("img");
+    this.cel=this.navParams.get("cel");
+    this.fb=this.navParams.get("fb");
+    this.twitter=this.navParams.get("twitter");
+    this.ints=this.navParams.get("inst");
   }
 
   ionViewDidLoad() {

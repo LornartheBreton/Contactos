@@ -7,12 +7,60 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>contacto</ion-title>
+    <ion-title>{{name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-card>
 
+    <img src={{img}}>
+    <ion-row>
+      <ion-col>
+        <ion-icon name="md-mail"></ion-icon>
+      </ion-col>
+      <ion-col>
+        {{mail}}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-icon name="md-call"></ion-icon>
+        </ion-col>
+        <ion-col>
+          {{cel}}
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-col>
+        <ion-col>
+          {{fb}}
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-col>
+        <ion-col>
+          {{twitter}}
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </ion-col>
+        <ion-col>
+          {{ints}}
+        </ion-col>
+    </ion-row>
+
+  </ion-card>
 </ion-content>
