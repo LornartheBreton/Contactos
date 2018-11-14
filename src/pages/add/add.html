@@ -14,5 +14,45 @@
 
 
 <ion-content padding>
+  <ion-card>
+    <ion-list>
+
+      <ion-item>
+        <ion-input placeholder="Nombre"
+        [(ngModel)]="contacto.name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-input placeholder="Teléfono"
+          [(ngModel)]="contacto.cel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-input placeholder="Correo Electrónico"
+          [(ngModel)]="contacto.mail"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+          <ion-input placeholder="Facebook"
+          [(ngModel)]="contacto.fb"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-input placeholder="Twitter"
+          [(ngModel)]="contacto.twitter"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-input placeholder="Instagram"
+          [(ngModel)]="contacto.inst"></ion-input>
+      </ion-item>
+      
+    </ion-list>
+
+  </ion-card>
+
+  <button ion-button block (click)="sendHome()">
+    Agregar
+  </button>
 
 </ion-content>
